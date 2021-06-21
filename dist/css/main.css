@@ -399,7 +399,8 @@ img {
     display: flex;
     justify-content: space-between;
     height: 5rem;
-    align-items: center; }
+    align-items: center;
+    margin: 0 4rem; }
     #main-footer .footer-content .social .fab {
       margin-right: 1rem;
       border: 2px #fff solid;
@@ -411,6 +412,31 @@ img {
       padding: 0.5rem; }
       #main-footer .footer-content .social .fab:hover {
         background: #ffbc00; }
+
+/* Scroll top */
+.scrolltop {
+  position: fixed;
+  right: 1.5rem;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+  background: #ffbc00;
+  border-radius: 0.4rem;
+  z-index: 10;
+  transition: 0.4s;
+  visibility: hidden; }
+  .scrolltop:hover {
+    background-color: #ccc; }
+  .scrolltop__icon {
+    font-size: 1.8rem;
+    color: #f4f4f4; }
+
+/* Show scrolltop */
+.show-scroll {
+  visibility: visible;
+  bottom: 1.5rem; }
 
 @media (max-width: 800px) {
   #header-home {

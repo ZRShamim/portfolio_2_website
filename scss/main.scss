@@ -364,6 +364,7 @@ img {
     justify-content: space-between;
     height: 5rem;
     align-items: center;
+    margin: 0 4rem;
 
     .social .fab {
       margin-right: 1rem;
@@ -380,6 +381,37 @@ img {
       }
     }
   }
+}
+
+/* Scroll top */
+.scrolltop {
+  position: fixed;
+  right: 1.5rem;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+  background: $main-color;
+  border-radius: 0.4rem;
+  z-index: 10;
+  transition: 0.4s;
+  visibility: hidden;
+
+  &:hover {
+    background-color: $medium-color;
+  }
+
+  &__icon {
+    font-size: 1.8rem;
+    color: $light-color;
+  }
+}
+
+/* Show scrolltop */
+.show-scroll {
+  visibility: visible;
+  bottom: 1.5rem;
 }
 
 // Import Media Queries
